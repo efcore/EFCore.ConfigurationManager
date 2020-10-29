@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using Microsoft.Extensions.DependencyInjection;
 
+#pragma warning disable EF1001
+
 namespace EntityFrameworkCore.ConfigurationManager
 {
     class ConfigurationManagerDbContextOptionsExtension : IDbContextOptionsExtension
@@ -23,6 +25,7 @@ namespace EntityFrameworkCore.ConfigurationManager
             {
                 using var scope = internalServiceProvider.CreateScope();
                 var resolver = scope.ServiceProvider.GetService<INamedConnectionStringResolver>();
+
                 if (!(resolver is ConfigrationManagerConnectionStringResolver))
                 {
                     throw new InvalidOperationException(Resources.ServicesMissing);

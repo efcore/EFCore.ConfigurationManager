@@ -2,14 +2,34 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>EntityFrameworkCore.ConfigurationManager</RootNamespace>
     <AssemblyName>EntityFrameworkCore.ConfigurationManager</AssemblyName>
+    <RootNamespace>EntityFrameworkCore.ConfigurationManager</RootNamespace>
+    <Authors>Brice Lambson</Authors>
+    <Description>Extends EF Core to resolve connection strings from App.config</Description>
+    <PackageProjectUrl>https://github.com/efcore/EFCore.ConfigurationManager</PackageProjectUrl>
+    <PackageTags>EFCore;Config</PackageTags>
+    <RepositoryUrl>https://github.com/efcore/EFCore.ConfigurationManager.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>© 2020 Brice Lambson. All rights reserved.</Copyright>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\key.snk</AssemblyOriginatorKeyFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>8.0</LangVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReleaseNotes>https://github.com/efcore/EFCore.ConfigurationManager/releases</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.9" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="build\**\*">
+      <Pack>True</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

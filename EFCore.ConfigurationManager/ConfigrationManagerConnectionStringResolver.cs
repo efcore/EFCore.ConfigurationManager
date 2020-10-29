@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 
+#pragma warning disable EF1001
+
 namespace EntityFrameworkCore.ConfigurationManager
 {
     class ConfigrationManagerConnectionStringResolver : INamedConnectionStringResolver
