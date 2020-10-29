@@ -1,7 +1,7 @@
 EntityFrameworkCore.ConfigurationManager
 ========================================
 
-![build status](https://img.shields.io/github/workflow/status/efcore/EFCore.ConfigurationManager/.NET%20Core/master) [![latest version](https://img.shields.io/nuget/v/EntityFrameworkCore.ConfigurationManager)](https://www.nuget.org/packages/EntityFrameworkCore.ConfigurationManager) [![downloads](https://img.shields.io/nuget/dt/EntityFrameworkCore.ConfigurationManager)](https://www.nuget.org/packages/EntityFrameworkCore.ConfigurationManager)
+![build status](https://img.shields.io/github/workflow/status/efcore/EFCore.ConfigurationManager/.NET%20Core/main) [![latest version](https://img.shields.io/nuget/v/EntityFrameworkCore.ConfigurationManager)](https://www.nuget.org/packages/EntityFrameworkCore.ConfigurationManager) [![downloads](https://img.shields.io/nuget/dt/EntityFrameworkCore.ConfigurationManager)](https://www.nuget.org/packages/EntityFrameworkCore.ConfigurationManager)
 
 Extends EF Core to resolve connection strings from App.config.
 
