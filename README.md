@@ -11,7 +11,7 @@ Installation
 The latest stable version is available on [NuGet](https://www.nuget.org/packages/EntityFrameworkCore.ConfigurationManager).
 
 ```sh
-dotnet add package EntityFrameworkCore.SqlServer.HierarchyId
+dotnet add package EntityFrameworkCore.ConfigurationManager
 ```
 
 Usage
