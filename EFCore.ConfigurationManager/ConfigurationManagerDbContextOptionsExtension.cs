@@ -46,11 +46,14 @@ namespace EntityFrameworkCore.ConfigurationManager
             public override string LogFragment
                 => "using ConfigurationManager ";
 
-            public override long GetServiceProviderHashCode()
+            public override int GetServiceProviderHashCode()
                 => 0;
 
             public override void PopulateDebugInfo(IDictionary<string, string> debugInfo)
                 => debugInfo["ConfigurationManager"] = "1";
+
+            public override bool ShouldUseSameServiceProvider(DbContextOptionsExtensionInfo other)
+                => other is ExtensionInfo;
         }
     }
 }

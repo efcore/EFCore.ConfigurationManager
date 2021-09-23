@@ -19,8 +19,7 @@ namespace EntityFrameworkCore.ConfigurationManager
         public static IServiceCollection AddEntityFrameworkConfigurationManager(this IServiceCollection serviceCollection)
         {
             new EntityFrameworkRelationalServicesBuilder(serviceCollection)
-                .TryAddProviderSpecificServices(
-                    x => x.TryAddScoped<INamedConnectionStringResolver, ConfigrationManagerConnectionStringResolver>());
+                .TryAdd<INamedConnectionStringResolver, ConfigrationManagerConnectionStringResolver>();
 
             return serviceCollection;
         }
